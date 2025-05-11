@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オリーブポイント ランディングページ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1200x600/A3BE8C/FFFFFF?text=地域活動のイメージ'); /* オリーブをイメージした背景や地域の活動風景の画像URLに置き換えてください */
+            background-size: cover;
+            background-position: center;
+        }
+        .olive-branch {
+            width: 50px; /* Adjust size as needed */
+            height: auto;
+            margin: 0 10px;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem; /* 32px */
+            font-weight: bold;
+            margin-bottom: 1.5rem; /* 24px */
+            color: #4A5568; /* gray-700 */
+        }
+        .section-title img {
+            margin-right: 0.5rem; /* 8px */
+        }
+        .golden-ticket {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #4A3B00;
+            border: 2px solid #DAA520;
+        }
+        .btn-primary {
+            background-color: #689F38; /* Olive green */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #558B2F; /* Darker olive green */
+        }
+        .highlight-text {
+            color: #689F38; /* Olive green */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-green-50">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-green-700">
+                <img src="https://placehold.co/40x40/689F38/FFFFFF?text=🌿" alt="オリーブのアイコン" class="inline-block mr-2 h-8 w-8">
+                オリーブポイント
+            </div>
+            <nav>
+                <a href="#about" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">オリーブポイントとは</a>
+                <a href="#how-to-earn" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">ポイントを貯める</a>
+                <a href="#rewards" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">特典</a>
+                <a href="#cta" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">参加しよう</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center bg-black bg-opacity-50 rounded-lg p-8 md:p-12">
+            <img src="https://placehold.co/100x100/A3BE8C/FFFFFF?text=🌿" alt="オリーブのアイコン" class="mx-auto mb-6 h-20 w-20 md:h-24 md:w-24">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                地域活動に参加して、<br class="md:hidden">地域を盛り上げよう！
+            </h1>
+            <p class="text-2xl md:text-4xl font-semibold text-yellow-300 mb-8">
+                オリーブポイント はじまります！！
+            </p>
+            <a href="#about" class="btn-primary font-bold py-3 px-8 rounded-lg text-lg hover:bg-green-700 transition duration-300">詳しく見る</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-12 md:py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title">
+                    <img src="https://placehold.co/50x50/689F38/FFFFFF?text=🌿" alt="オリーブのアイコン" class="inline-block mr-2 h-10 w-10">
+                    オリーブポイントとは？
+                </h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                    地域イベントに参加して、<span class="highlight-text">オリーブポイント</span>を貯めませんか？<br>
+                    貯まったポイントは、夏祭りで大活躍の<span class="highlight-text">ゴールデンチケット</span>と交換できます！<br>
+                    地域活動への参加は、地域の絆を深め、子どもたちの成長を地域全体で支える力になります。<br>
+                    さあ、あなたも地域活動に参加してオリーブポイントをためよう！！
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="rounded-lg overflow-hidden card-shadow">
+                    <img src="https://placehold.co/600x400/A3BE8C/FFFFFF?text=地域活動の様子" alt="地域活動のイメージ" class="w-full h-auto object-cover">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">ポイントカードについて</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 text-lg">
+                        <li>会員のお子様一人につき <span class="font-bold">1枚発行</span>します。</li>
+                        <li>夏祭りで使える<span class="highlight-text">ゴールデンチケット</span>と交換します。</li>
+                        <li><span class="font-bold">2ポイント</span>でゴールデンチケット<span class="font-bold">1枚</span>と交換します。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rewards" class="py-12 md:py-20 bg-green-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                 <h2 class="section-title">
+                    <img src="https://placehold.co/50x50/FFD700/4A3B00?text=🌟" alt="星のアイコン" class="inline-block mr-2 h-10 w-10">
+                    ゴールデンチケットについて
+                </h2>
+            </div>
+            <div class="max-w-2xl mx-auto golden-ticket p-8 rounded-xl card-shadow text-center">
+                <img src="https://placehold.co/80x80/FFD700/4A3B00?text=🎫" alt="ゴールデンチケットのアイコン" class="mx-auto mb-4 h-16 w-16">
+                <p class="text-lg md:text-xl font-semibold mb-4">
+                    1枚につき一回ゲームができ、射的で的が近くなったり、ヨーヨー釣りでおまけをしてもらえる可能性がある<span class="font-bold text-orange-700">特別なカード</span>です！！
+                </p>
+                <p class="text-sm">夏祭りをさらに楽しめるチャンス！</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to-earn" class="py-12 md:py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title">
+                    <img src="https://placehold.co/50x50/689F38/FFFFFF?text=➕" alt="プラスのアイコン" class="inline-block mr-2 h-10 w-10">
+                    ポイントのたまるイベント
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-green-50 p-6 rounded-lg card-shadow hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-green-800 mb-3">
+                        <img src="https://placehold.co/30x30/8BC34A/FFFFFF?text=🧹" alt="清掃活動のアイコン" class="inline-block mr-2 h-7 w-7">
+                        清掃活動
+                    </h3>
+                    <p class="text-gray-700 mb-1">6月・7月・8月の清掃活動に一回参加につき、<span class="highlight-text">1ポイント</span>GET！</p>
+                    <div class="mt-4 space-y-1 text-gray-600">
+                        <p><span class="font-semibold">日程:</span></p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>6月15日</li>
+                            <li>7月20日</li>
+                            <li>8月17日</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-yellow-50 p-6 rounded-lg card-shadow hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-yellow-800 mb-3">
+                        <img src="https://placehold.co/30x30/FFC107/FFFFFF?text=🏮" alt="夏祭りのアイコン" class="inline-block mr-2 h-7 w-7">
+                        夏祭り準備
+                    </h3>
+                    <p class="text-gray-700 mb-1">準備参加で<span class="font-bold text-orange-600">1ポイント</span>GET！</p>
+                     <div class="mt-4 space-y-1 text-gray-600">
+                        <p><span class="font-semibold">日程:</span> 開催日未定 (決まり次第お知らせします)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="py-20 bg-green-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                さあ、あなたも地域活動に参加して<br>オリーブポイントをためよう！
+            </h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                地域のイベントに参加して、コミュニティを一緒に盛り上げましょう。<br>
+                たくさんのご参加をお待ちしています！
+            </p>
+            <a href="#" class="bg-yellow-400 text-green-800 font-bold py-4 px-10 rounded-lg text-xl hover:bg-yellow-300 transition duration-300">
+                イベント情報をチェック
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 オリーブポイントプログラム. All Rights Reserved.</p>
+            <p class="text-sm mt-2">お問い合わせ: info@example.com</p> </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
